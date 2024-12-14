@@ -1,9 +1,9 @@
-name: Run Python Script Every Minute
+name: Run Python Script Every Day at 11 PM IST
 
 on:
   schedule:
-    # Run every minute
-    - cron: "*/1 * * * *"
+    # Run every day at 11 PM IST (which is 5:30 PM UTC)
+    - cron: "30 17 * * *"  # 17:30 UTC (which is 23:00 IST)
 
 jobs:
   run-script:
