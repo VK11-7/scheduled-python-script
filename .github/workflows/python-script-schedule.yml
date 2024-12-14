@@ -3,7 +3,7 @@ name: Run Python Script Every Minute
 on:
   schedule:
     # Run every minute
-    - cron: "0 * * * *"
+    - cron: "*/1 * * * *"
 
 jobs:
   run-script:
@@ -24,4 +24,7 @@ jobs:
 
     - name: Run the script
       run: |
+        # Running Python script
         python script.py
+        # Echo the output to be visible in the description
+        echo "The script has finished running at $(date)" >> $GITHUB_STEP_SUMMARY
