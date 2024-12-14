@@ -1,0 +1,30 @@
+name: Run Python Script Every Day at 3 PM IST
+
+on:
+  schedule:
+    # Run every day at 3 PM IST (which is 9:30 AM UTC)
+    - cron: "30 9 * * *"  # 9:30 AM UTC (which is 15:00 IST)
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+
+    - name: Run the script
+      run: |
+        # Running Python script
+        python script.py
+        # Echo the output to be visible in the description
+        echo "The script has finished running at $(date)" >> $GITHUB_STEP_SUMMARY
