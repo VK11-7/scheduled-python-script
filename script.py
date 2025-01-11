@@ -80,7 +80,12 @@ def main():
     kollamera_element = soup1.find('div', text=lambda t: 'Kollam Era' in t if t else False)
     l121 = soup1.find('div',class_='dpPHeaderLeftTitle')
     kollamdate = l121.text
-    Masa = ""
+
+    page2=requests.get('https://www.drikpanchang.com/kannada/panchangam/kannada-day-panchangam.html?geoname-id=1277333&date='+formatted_date)
+    
+    soup2=BeautifulSoup(page2.text,'html.parser')
+    masa_element = soup2.find('div',class_='dpPHeaderLeftTitle')
+    Masa = masa_element.text
     # print(Masa)
     Kollamera = kollamdate+", "+kollamera_element.text[:4]
     # print(Kollamera)
