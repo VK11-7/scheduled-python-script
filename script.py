@@ -298,56 +298,56 @@ def main():
     Chakrabasedonvasara=Chakrabasedonvasara
     Bodypartbasedonnakshatra=Bodypartbasedonnakshatra
     message = """
-    Simply Ayurveda - Dainika Vaidya Almanac
-    
-    ✨ Suprabhatam ✨
-    
-    {Date}
-    {Weekday}
-    
-    ☀️ Sunrise – {Sunrise}
-    🌇 Sunset – {Sunset}
-    🌒 Moonrise – {Moonrise}
-    🌃 Moonset – {Moonset}
-    
-    Samvatsara – {Samvatsara}
-    Ayana - {Ayana}
-    Ritu – {Ritu}
-    Masa - {Masa}
-    Kollam era – {Kollamera}
-    Paksha – {Paksha}
-    Tithi – {Tithi}
-    Vasara – {Vasara}
-    Nakshatra – {Nakshatra}
-    Sunsign – {Sunsign}
-    Moonsign – {Moonsign}
-    
-    ✨ Auspicious hours -✨
-    🪷 Brahma muhurta – {Brahmamuhurta}
-    🌼 Pratah sandhya – {Pratahsandhya}
-    🌸 Abhijit muhurta – {Abhijitmuhurta}
-    🌼 Saayam sandhya – {Saayamsandhya}
-    
-    🛑 Hours to be careful around
-    ❌Rahu kalam – {Rahukalam}
-    ‼️Yama ganda – {Yamaganda}
-    💊Gulikai Kaalam – {Gulikaikaalam}
-    
-    Significance – {Significance}
-    
-    🩺✡️ Medicoastrological significance -
-    Sudhakala in women – {Sudhakalainwomen}🚺
-    Sudhakala in men – {Sudhakalainmen}🚹
-    Vishakala in women – {Vishakalainwomen}🦳
-    Vishakala in men – {Vishakalainmen}🧔🏻‍♂
-    Chakra based on vasara – {Chakrabasedonvasara}
-    
-    Body of Kala Purusha according to Nakshatra –
-    
-    {Bodypartbasedonnakshatra}
-    Have we missed anything important?
-    Message Simply Ayurveda on WhatsApp. https://wa.me/message/DTX6RK5L6HE3B1
-    Subscribe to our YouTube channel - https://youtube.com/c/SimplyAyurveda
+Simply Ayurveda - Dainika Vaidya Almanac
+
+✨ Suprabhatam ✨
+
+{Date}
+{Weekday}
+
+☀️ Sunrise – {Sunrise}
+🌇 Sunset – {Sunset}
+🌒 Moonrise – {Moonrise}
+🌃 Moonset – {Moonset}
+
+Samvatsara – {Samvatsara}
+Ayana - {Ayana}
+Ritu – {Ritu}
+Masa - {Masa}
+Kollam era – {Kollamera}
+Paksha – {Paksha}
+Tithi – {Tithi}
+Vasara – {Vasara}
+Nakshatra – {Nakshatra}
+Sunsign – {Sunsign}
+Moonsign – {Moonsign}
+
+✨ Auspicious hours -✨
+🪷 Brahma muhurta – {Brahmamuhurta}
+🌼 Pratah sandhya – {Pratahsandhya}
+🌸 Abhijit muhurta – {Abhijitmuhurta}
+🌼 Saayam sandhya – {Saayamsandhya}
+
+🛑 Hours to be careful around
+❌Rahu kalam – {Rahukalam}
+‼️Yama ganda – {Yamaganda}
+💊Gulikai Kaalam – {Gulikaikaalam}
+
+Significance – {Significance}
+
+🩺✡️ Medicoastrological significance -
+Sudhakala in women – {Sudhakalainwomen}🚺
+Sudhakala in men – {Sudhakalainmen}🚹
+Vishakala in women – {Vishakalainwomen}🦳
+Vishakala in men – {Vishakalainmen}🧔🏻‍♂
+Chakra based on vasara – {Chakrabasedonvasara}
+
+Body of Kala Purusha according to Nakshatra –
+
+{Bodypartbasedonnakshatra}
+Have we missed anything important?
+Message Simply Ayurveda on WhatsApp. https://wa.me/message/DTX6RK5L6HE3B1
+Subscribe to our YouTube channel - https://youtube.com/c/SimplyAyurveda
     """
     msg = message.format(Date=Date, Weekday=Weekday, Sunrise=Sunrise, Sunset=Sunset, Moonrise=Moonrise, Moonset=Moonset, Samvatsara=Samvatsara, Ayana=Ayana, Ritu=Ritu, Masa=Masa, Kollamera=Kollamera, Paksha=Paksha, Tithi=Tithi, Vasara=Vasara, Nakshatra=Nakshatra, Sunsign=Sunsign, Moonsign=Moonsign, Brahmamuhurta=Brahmamuhurta, Pratahsandhya=Pratahsandhya, Abhijitmuhurta=Abhijitmuhurta, Saayamsandhya=Saayamsandhya, Rahukalam=Rahukalam, Yamaganda=Yamaganda, Gulikaikaalam=Gulikaikaalam, Significance=Significance, Sudhakalainwomen=Sudhakalainwomen, Sudhakalainmen=Sudhakalainmen, Vishakalainwomen=Vishakalainwomen, Vishakalainmen=Vishakalainmen, Chakrabasedonvasara=Chakrabasedonvasara, Bodypartbasedonnakshatra=Bodypartbasedonnakshatra)
     print(msg)
