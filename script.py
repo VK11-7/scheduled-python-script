@@ -7,7 +7,7 @@ import pandas as pd
 from io import BytesIO
 import urllib
 from datetime import datetime, timedelta
-import streamlit as st
+# import streamlit as st
 import docx
 
 def main():
