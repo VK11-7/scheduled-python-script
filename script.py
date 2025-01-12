@@ -16,8 +16,11 @@ def main():
     # st.title('Welcome🙏🏻')
     # st.header('Simply Ayurveda presents🌿')
     # st.subheader('Dainika Almanac🗓️')
-    
-    formatted_date = datetime.today().strftime("%d/%m/%Y")
+    today = datetime.today()
+    date1 = today.strftime("%d/%m/%Y")
+    tomorrow = today + timedelta(1)
+    formatted_date = tomorrow.strftime("%d/%m/%Y")
+    # formatted_date = datetime.today().strftime("%d/%m/%Y")
     # st.write(f"Today's Almanac📝: {formatted_date}")
     
     nakshatras = ["Ashwini", "Bharani", "Krittika", "Rohini", "Mrigashira", "Ardra", "Punarvasu", "Pushya", "Ashlesha", "Magha", "Purva Phalguni", "Uttara Phalguni", "Hasta", "Chitra", "Swati", "Vishakha", "Anuradha", "Jyeshtha", "Mula", "Purva Ashadha", "Uttara Ashadha", "Shravana", "Dhanishtha", "Shatabhisha", "Purva Bhadrapada", "Uttara Bhadrapada", "Revati"]
