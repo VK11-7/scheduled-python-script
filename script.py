@@ -363,7 +363,7 @@ Subscribe to our YouTube channel - https://youtube.com/c/SimplyAyurveda
     #st.write(dd)
     
     TELEGRAM_BOT_TOKEN = "7965698138:AAHvzdIZbZH9Uu9k8wmBevSev14iLwEgEAo"
-    TELEGRAM_CHAT_ID = "817330946"
+    TELEGRAM_CHAT_ID = "-4741545165"
     
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     payload = {"chat_id": TELEGRAM_CHAT_ID, "text": msg, "parse_mode": "Markdown"}
@@ -371,8 +371,8 @@ Subscribe to our YouTube channel - https://youtube.com/c/SimplyAyurveda
     response = requests.post(url, json=payload)
     
     msg2 = """
-    For Admin purposes only: You can check the Almanac for any date of your choice by clicking on the following link:-
-    https://almac2.streamlit.app
+For Admin purposes only 🛠: You can check the Almanac for any date of your choice by clicking on the following link:-
+https://almac2.streamlit.app
     """
     payload = {"chat_id": TELEGRAM_CHAT_ID, "text": msg2, "parse_mode": "Markdown"}
     
