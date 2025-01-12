@@ -369,6 +369,14 @@ Subscribe to our YouTube channel - https://youtube.com/c/SimplyAyurveda
     payload = {"chat_id": TELEGRAM_CHAT_ID, "text": msg, "parse_mode": "Markdown"}
     
     response = requests.post(url, json=payload)
+    
+    msg2 = """
+    For Admin purposes only: You can check the Almanac for any date of your choice by clicking on the following link:-
+    https://almac2.streamlit.app
+    """
+    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": msg2, "parse_mode": "Markdown"}
+    
+    response = requests.post(url, json=payload)
     # if response.status_code == 200:
     #   st.success("Message sent to Telegram!")
     # else:
